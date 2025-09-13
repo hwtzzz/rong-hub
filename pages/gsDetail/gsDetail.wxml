@@ -1,0 +1,47 @@
+<view>
+
+    <head fromFather="{{ name }}">
+    </head>
+
+    <view class="goBackBox" bindtap="goOneClickLogin">
+        <image src="../../images/goback.png" mode="" />
+        <view class="backText">返回</view>
+    </view>
+
+    <scroll-view scroll-y="true" style="height: 860px;margin-top: -28px;">
+        <!-- pages/detail/detail.wxml -->
+        <view class="container">
+            <!-- 商品主图 -->
+            <image src="{{gs.image}}" mode="widthFix" class="main-image" />
+
+            <!-- 内容卡片 -->
+            <view class="content-card">
+                <!-- 标题与标签 -->
+                <view class="title-section">
+                    <text class="title">{{gs.name}}</text>
+                    <view class="tag {{gs.gsType ? 'cuisine' : 'specialty'}}">
+                        {{gs.gsType ? '美食' : '特产'}}
+                    </view>
+                </view>
+
+                <!-- 发布时间 -->
+                <view class="publish-time">
+                    <text>{{gs.publicTime}}发布</text>
+                </view>
+
+                <!-- 分割线 -->
+                <view class="divider"></view>
+
+                <!-- 详细描述 -->
+                <view class="content-section">
+                    <text class="content-title">特色说明</text>
+                    <text class="content-text">{{gs.content}}</text>
+                </view>
+
+                <!-- 装饰元素 -->
+                <view class="deco-line"></view>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>

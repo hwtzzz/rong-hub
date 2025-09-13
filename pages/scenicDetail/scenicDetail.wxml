@@ -1,0 +1,94 @@
+<!--pages/scenicDetail/scenicDetail.wxml-->
+<view>
+
+    <head fromFather="{{ name }}">
+    </head>
+
+    <view class="goBackBox" bindtap="goOneClickLogin">
+        <image src="../../images/goback.png" mode="" />
+        <view class="backText">返回</view>
+    </view>
+
+    <!-- 顶部轮播图 -->
+    <swiper class="home-swiper" autoplay="true" interval="5000" duration="1000" indicator-color="#bfbfbf" indicator-active-color="#00ACED" class="bannerBox">
+        <block wx:for="{{scenic.images}}">
+            <swiper-item>
+                <image src="{{item}}" class="bannerImage"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 顶部轮播图end -->
+
+    <!-- 标题时间 -->
+    <view class="scenicTopBox">
+        <view class="scenicName">{{ scenic.name }}</view>
+        <view class="openTime">
+            <image src="../../images/time.png" mode="" />
+            {{ scenic.openTime }}
+        </view>
+        <view class="address">
+            <image src="../../images/address.png" mode="" />
+            {{ scenic.address }}
+        </view>
+    </view>
+    <!-- 标题时间 end -->
+
+    <scroll-view scroll-y="true" style="height: 500px;">
+        <!-- 简介 -->
+        <view class="descBox">
+            <view class="descTitle">简介</view>
+            <view class="descContent">{{ scenic.content }}</view>
+        </view>
+        <!-- 简介 end -->
+
+        <!-- 其他信息 -->
+        <view class="otherBox">
+            <view class="descTitle">景区实时天气</view>
+            <!-- <view class="weatherBaseBox">
+                <view>湿度：{{ weather.humidity}}</view>
+                <view>时间：{{ weather.reporttime}}</view>
+                <view>温度：{{ weather.temperature}}</view>
+                <view>天气：{{ weather.weather}}</view>
+                <view>风向：{{ weather.winddirection}}</view>
+                <view>风力：{{ weather.windpower}}</view>
+        </view> -->
+            <view class="weatherBaseBox">
+                <view class="left">
+                    <view class="humidity">湿度：{{ weather.humidity }}%</view>
+                    <view class="time">时间：{{ weather.reporttime }}</view>
+                </view>
+                <view class="right">
+                    <view class="temperature">温度：{{ weather.temperature }}°</view>
+                    <view class="weatherCondition">天气：{{ weather.weather }}</view>
+                    <view class="windDirection">风向：{{ weather.winddirection }}</view>
+                    <view class="windPower">风力：{{ weather.windpower }}</view>
+                </view>
+            </view>
+
+            <view class="descTitle">景区天气预报</view>
+            <!-- <view class="weatherBaseBox2" wx:for="{{weatherList}}">
+                <view>日期：{{ item.date }}</view>
+                <view>星期几：{{ item.reporttime }}</view>
+                <view>温度：{{ item.daytemp }}°</view>
+                <view>风力：{{ item.daypower }}</view>
+                <view>风向：{{ item.daywind }}</view>
+                <view>风力：{{ item.daypower }}</view>
+            </view> -->
+
+            <view class="weatherBaseBox2" wx:for="{{ weatherList }}">
+                <view class="left">
+                    <view class="date">日期：{{ item.date }}</view>
+                    <view class="weekday">星期几：{{ item.week }}</view>
+                </view>
+                <view class="right">
+                    <view class="temp">温度：{{ item.daytemp }}°</view>
+                    <view class="windPower" style="font-size: 30rpx;">风力：{{ item.daypower }}</view>
+                    <view class="windDirection" style="color: rgb(248, 103, 6);font-size: 30rpx;">风向：{{ item.daywind }}</view>
+                </view>
+            </view>
+
+
+
+        </view>
+    </scroll-view>
+</view>

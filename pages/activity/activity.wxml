@@ -1,0 +1,86 @@
+<!--pages/activity/activity.wxml-->
+<view>
+
+    <head fromFather="活动">
+    </head>
+
+    <!-- 活动轮播图 -->
+
+    <!-- 活动轮播图end -->
+
+    <van-tabs bind:click="onClick" sticky animated color="#00c2a8">
+        <van-tab title="最热" name="最热">
+            <scroll-view scroll-y="true" style="height: 860px;">
+                <view class="imagePKBox">
+                    <view class="PKBoxList" wx:for="{{activityList}}">
+                        <view class="activityImage">
+                            <image src="{{item.image}}" mode="" data-src="{{item.image}}" catchtap="pictureview" />
+                        </view>
+                        <view class="activityText">
+                            <view class="activityTextInfo">
+                                <image src="{{ item.avatar }}" mode="" />
+                                <view>{{item.nickname}}</view>
+                            </view>
+                            <view class="activityTextLike">
+                                <image bind:tap="like" id="{{item.activityId}}" wx:if="{{ item.like == 1 }}" class="likeIcon" src="../../images/like.png" mode="" />
+                                <image bind:tap="like" id="{{item.activityId}}" wx:if="{{ item.like == 2 }}" class="likeIcon" src="../../images/liked.png" mode="" />
+                                <view class="likeNumber">{{item.support}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view style="height: 30rpx;"></view>
+
+                <!-- 评论部分 -->
+                <!-- 评论输入框 -->
+                <view style="width: 97%;margin: 10px auto;">
+                    <van-cell-group>
+                        <van-field value="{{ value }}" type="textarea" placeholder="请输入留言" autosize border="{{ false }}" bind:change="onInputChange" clearable="true" maxlength="150">
+                            <van-button slot="button" size="small" type="primary" bind:tap="sendValue">
+                                发送
+                            </van-button>
+                        </van-field>
+                    </van-cell-group>
+                </view>
+                <!-- 评论列表 -->
+                <view wx:for="{{activityCommentList}}">
+                    <view class="strategyReviewListBox">
+                        <view class="userAvatar">
+                            <image src="{{item.avatar}}" mode="" />
+                        </view>
+                        <view class="strategyBoxRight">
+                            <view class="nickname">{{item.nickname}}</view>
+                            <view class="userContent">{{item.content}}</view>
+                            <view class="sendTime">{{item.sendTime}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="buttom">我也是有底线的哦~</view>
+                <!-- 评论部分end -->
+            </scroll-view>
+        </van-tab>
+
+
+        <van-tab title="最新" name="最新">
+            <view class="imagePKBox2">
+                <view class="PKBoxList" wx:for="{{activityList}}" style="padding-top: 15rpx;">
+                    <view class="activityImage">
+                        <image src="{{item.image}}" mode="" data-src="{{item.image}}" catchtap="pictureview" />
+                    </view>
+                    <view class="activityText">
+                        <view class="activityTextInfo">
+                            <image src="{{ item.avatar }}" mode="" />
+                            <view>{{item.nickname}}</view>
+                        </view>
+                        <view class="activityTextLike">
+                            <image bind:tap="like" id="{{item.activityId}}" wx:if="{{ item.like == 1 }}" class="likeIcon" src="../../images/like.png" mode="" />
+                            <image bind:tap="like" id="{{item.activityId}}" wx:if="{{ item.like == 2 }}" class="likeIcon" src="../../images/liked.png" mode="" />
+                            <view class="likeNumber">{{item.support}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </van-tab>
+    </van-tabs>
+
+</view>

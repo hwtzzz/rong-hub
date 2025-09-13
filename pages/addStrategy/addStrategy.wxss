@@ -1,0 +1,83 @@
+.page {
+    padding: 20rpx;
+    background-color: #f7f7f7;
+    /* 设置页面背景颜色 */
+}
+
+.van-field__control {
+    font-size: 24rpx;
+}
+
+.van-uploader__wrapper {
+    background-color: #ffffff;
+    border-radius: 10rpx;
+    box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    margin-top: 20rpx;
+    padding: 20rpx;
+}
+
+.van-uploader__upload {
+    background-color: #00c2a8;
+    /* 上传按钮背景色 */
+    border-radius: 10rpx;
+}
+
+.submit-btn {
+    margin-top: 30rpx;
+    background-color: #00c2a8;
+    /* 提交按钮颜色 */
+    border-radius: 20rpx;
+}
+
+.van-field__label {
+    font-size: 28rpx;
+    color: #333;
+}
+
+.van-field__control {
+    font-size: 26rpx;
+    color: #666;
+}
+
+.van-picker {
+    margin-top: 20rpx;
+}
+
+.van-picker__confirm {
+    background-color: #00c2a8;
+    /* 选择器确认按钮颜色 */
+    color: white;
+}
+
+.van-picker__cancel {
+    color: #666;
+}
+
+.van-button--primary {
+    background-color: #00c2a8;
+    /* 主按钮颜色 */
+    border-radius: 20rpx;
+}
+
+.goBackBox {
+    width: 130rpx;
+    height: 55rpx;
+    position: relative;
+    top: -77rpx;
+    left: 10rpx;
+}
+
+.goBackBox image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.backText {
+    position: absolute;
+    left: 55rpx;
+    top: 5rpx;
+    color: white;
+    font-weight: 600;
+}

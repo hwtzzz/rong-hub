@@ -1,0 +1,77 @@
+<!--pages/strategyDetail/strategyDetail.wxml-->
+<view>
+
+    <head fromFather="攻略详情">
+    </head>
+
+    <view class="goBackBox" bindtap="goOneClickLogin">
+        <image src="../../images/goback.png" mode="" />
+        <view class="backText">返回</view>
+    </view>
+
+    <scroll-view scroll-y="true" style="height: 860px;" class="scrollBox">
+        <view class="strategyBox">
+            <view class="title">{{ strategyDetail.title }}</view>
+            <view class="userInfo">
+                <view class="avatar">
+                    <image src="{{strategyDetail.image}}"></image>
+                </view>
+                <view class="nickname">
+                    {{strategyDetail.nickname}}
+                </view>
+            </view>
+            <view class="publishTime">
+                发布时间：{{strategyDetail.publishTime}}
+            </view>
+
+            <view class="content" style="margin-top: 10rpx;">
+                {{strategyDetail.content}}
+            </view>
+
+            <view class="name">
+                #{{strategyDetail.name}}
+            </view>
+
+            <swiper class="home-swiper" autoplay="true" interval="5000" duration="1000" indicator-color="white" indicator-active-color="#00c2a8" class="bannerBox" indicator-dots="true" wx:if="{{ strategyDetail.images.length > 0 }}">
+                <block wx:for="{{strategyDetail.images}}">
+                    <swiper-item>
+                        <image src="{{item}}" class="bannerImage"></image>
+                    </swiper-item>
+                </block>
+            </swiper>
+            <view class="image" wx:if="{{ strategyDetail.images.length == 0 }}">
+                <image src="{{strategyDetail.image}}" class=""></image>
+            </view>
+
+            <!-- 这里是下面的空白 -->
+            <view style="height: 30rpx;"></view>
+        </view>
+
+        <!-- 评论部分 -->
+        <!-- 评论输入框 -->
+        <view style="width: 97%;margin: 10px auto;">
+            <van-cell-group>
+                <van-field value="{{ value }}" type="textarea" placeholder="请输入留言" autosize border="{{ false }}" bind:change="onInputChange" clearable="true" maxlength="150">
+                    <van-button slot="button" size="small" type="primary" bind:tap="sendValue">
+                        发送
+                    </van-button>
+                </van-field>
+            </van-cell-group>
+        </view>
+        <!-- 评论列表 -->
+        <view wx:for="{{strategyReviewList}}">
+            <view class="strategyReviewListBox">
+                <view class="userAvatar">
+                    <image src="{{item.avatar}}" mode="" />
+                </view>
+                <view class="strategyBoxRight">
+                    <view class="nickname">{{item.nickname}}</view>
+                    <view class="userContent">{{item.content}}</view>
+                    <view class="sendTime">{{item.contentTime}}</view>
+                </view>
+            </view>
+        </view>
+        <!-- 评论部分end -->
+
+    </scroll-view>
+</view>

@@ -1,0 +1,49 @@
+<view>
+
+    <head fromFather="我的攻略审核">
+    </head>
+
+    <view class="goBackBox" bindtap="goOneClickLogin">
+        <image src="../../images/goback.png" mode="" />
+        <view class="backText">返回</view>
+    </view>
+
+    <view class="container">
+        <scroll-view scroll-y style="height: 1400rpx;margin-top: -125px;" class="list-container">
+            <!-- 空状态提示 -->
+            <view wx:if="{{strategyList.length === 0}}" class="empty">
+                <image src="../../images/empty.png" class="empty-img" />
+                <text class="empty-text">暂无攻略记录~</text>
+            </view>
+
+            <view class="strategyListBox">
+                <view class="strategyBox" wx:for="{{strategyList}}" wx:key="strategyId">
+                    <!-- 攻略图片 -->
+                    <view class="strategyBoxImage">
+                        <image src="{{item.image}}" mode="" />
+                    </view>
+                    <!-- 攻略信息 -->
+                    <view class="strategyBoxInfo">
+                        <view class="title">{{item.title}}</view>
+                        <view class="content">{{ item.content }}</view>
+                        <view class="publishTime">{{ item.publishTime }}</view>
+                    </view>
+                    <!-- 右侧操作栏 -->
+                    <view class="options">
+                        <van-tag type="primary" size="medium" wx:if="{{ item.audit ==  1}}">未审核</van-tag>
+                        <van-tag type="success" size="medium" wx:if="{{ item.audit ==  2}}">已通过</van-tag>
+                        <van-tag type="danger" size="medium" wx:if="{{ item.audit ==  3}}">未通过</van-tag>
+                        <view class="optionsImage" bind:tap="openDialog" data-index="{{item.strategyId}}">
+                            <image src="../../images/delete.png" mode="" />
+                        </view>
+                        <!-- 消息确认 -->
+                        <van-dialog id="van-dialog" />
+                    </view>
+                </view>
+            </view>
+
+        </scroll-view>
+    </view>
+
+
+</view>

@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<!-- #b0a8b9 #00c2a8 -->
+
+<view scroll-y type="list">
+
+    <!-- 顶部轮播图 -->
+    <swiper class="home-swiper" autoplay="true" interval="5000" duration="1000" indicator-color="#bfbfbf" indicator-active-color="#00ACED">
+        <block wx:for="{{bannerList}}">
+            <swiper-item>
+                <image src="{{item}}" class="bannerImage"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 顶部轮播图end -->
+
+    <!-- 主页导航栏 -->
+    <view class="listBox">
+        <view class="iconBox" bindtap="goScenic">
+            <view class="iconBoxImage">
+                <image src="/images/zixun.png" />
+            </view>
+            <view class="iconBoxText">景区列表</view>
+        </view>
+        <view class="iconBox" data-index="1" data-name="美食" bindtap="goGS">
+            <view class="iconBoxImage" style="background-color: #ff9671;">
+                <image src="/images/delicacies.png" />
+            </view>
+            <view class="iconBoxText">美食</view>
+        </view>
+        <view class="iconBox" data-index="0" data-name="特产" bindtap="goGS">
+            <view class="iconBoxImage" style="background-color: #2c73d2;">
+                <image src="/images/techan.png" />
+            </view>
+            <view class="iconBoxText">特产</view>
+        </view>
+        <view class="iconBox" bindtap="goStrategy">
+            <view class="iconBoxImage" style="background-color: #845ec2;">
+                <image src="/images/dongtai.png" />
+            </view>
+            <view class="iconBoxText">攻略</view>
+        </view>
+    </view>
+    <!-- 主页导航栏end -->
+
+    <!-- 游玩指南 -->
+    <view class="playBox">
+        <view class="playBoxTitle">游玩保障</view>
+        <view class="playBoxCardBox">
+            <view class="playBoxCardBoxLeft" bindtap='goNotice'>
+                <view class="notice">
+                    <view class="playBoxNoticeText1">系统公告</view>
+                    <view class="playBoxNoticeText2">服务游客 助力旅游</view>
+                </view>
+            </view>
+            <view class="playBoxCardBoxRight">
+                <view class="playBoxCardBoxRightBox" style="background-color: #0081cf;" is-link bindtap='callPhone' value="18681356127">
+                    <view class="playBoxCardBoxRightBox1">旅游咨询</view>
+                    <view class="playBoxCardBoxRightBox2">咨询有径 即时贴心</view>
+                </view>
+                <view class="playBoxCardBoxRightBox" bindtap='goSuggestion' style="background-color: #ff9671;">
+                    <view class="playBoxCardBoxRightBox1">投诉求助</view>
+                    <view class="playBoxCardBoxRightBox2">投诉有门 实时高效</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 游玩指南end -->
+
+    <!-- 旅游人气榜 -->
+    <scroll-view scroll-y="true" style="height: 300px;">
+        <view class="hotListBox">
+            <view class="playBoxTitle">旅游人气榜</view>
+            <view class="hotListBoxButtom">
+                <view class="hotListBoxButtomBox">
+                    <view class="hotListBoxButtomCard" style="background-color: #2c73d2;">
+                        <view class="cardTop">景 点</view>
+                        <view class="cardButtom">人 气 榜</view>
+                    </view>
+                    <view class="hotelList">
+                        <view class="list" wx:for="{{referralScenicList}}" wx:for-index="index" bindtap="scenicDetail" data-index="{{item.scenicId}}" data-name="{{item.name}}">
+                            <view class="listNumber" wx:if="{{index == 0}}" class="listNumber,color1">{{index + 1}}</view>
+                            <view class="listNumber" wx:if="{{index == 1}}" class="listNumber,color2">{{index + 1}}</view>
+                            <view class="listNumber" wx:if="{{index == 2}}" class="listNumber,color3">{{index + 1}}</view>
+                            <view class="listText">{{item.name}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="hotListBoxButtomBox">
+                    <view class="hotListBoxButtomCard" style="background-color: #ff6f91;">
+                        <view class="cardTop">攻 略</view>
+                        <view class="cardButtom">人 气 榜</view>
+                    </view>
+                    <view class="hotelList">
+                        <view class="list" wx:for="{{referralStrategyList}}" wx:for-index="index" bindtap="strategyDetail" data-index="{{item.strategyId}}">
+                            <view class="listNumber" wx:if="{{index == 0}}" class="listNumber,color1">{{index + 1}}</view>
+                            <view class="listNumber" wx:if="{{index == 1}}" class="listNumber,color2">{{index + 1}}</view>
+                            <view class="listNumber" wx:if="{{index == 2}}" class="listNumber,color3">{{index + 1}}</view>
+                            <view class="listText">{{item.title}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <!-- 旅游人气榜end -->
+
+</view>

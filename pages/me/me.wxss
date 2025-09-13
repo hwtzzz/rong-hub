@@ -1,0 +1,92 @@
+/* pages/me/me.wxss */
+page {
+    background-color: rgb(241, 243, 245);
+}
+
+.backBox {
+    width: 100%;
+    /* 盒子的宽度 */
+    height: 120px;
+    /* 盒子的高度 */
+    background: linear-gradient(to bottom, #00c2a8, #6af5d5);
+    /* 渐变效果 */
+    border-bottom-left-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    /* 左右分布 */
+    align-items: center;
+    /* 垂直居中 */
+    padding: 0 10rpx;
+    /* 内边距，左右各20rpx */
+}
+
+/* 信息部分 */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name,
+.address {
+    color: white;
+}
+
+.name {
+    font-size: 40rpx;
+    font-weight: 600;
+}
+
+.address {
+    padding-top: 15rpx;
+}
+
+/* 头像部分 */
+.avatar {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+    /* 圆形头像 */
+}
+
+.custom-arrow .van-cell__right-icon {
+    color: #ff0000;
+    /* 修改箭头颜色为红色 */
+}
+
+/* 容器样式，确保按钮居中 */
+.loginOut {
+    margin: 30rpx auto;
+    height: 70rpx;
+    width: 95%;
+    border: 2rpx solid red;
+    /* 红色边框 */
+    color: red;
+    /* 初始文字颜色为红色 */
+    font-size: 30rpx;
+    /* 字体大小 */
+    text-align: center;
+    /* 居中文本 */
+    line-height: 70rpx;
+    /* 垂直居中 */
+    border-radius: 50rpx;
+    /* 圆角边框 */
+    cursor: pointer;
+}
+
+
+/* 按钮点击时的样式 */
+.loginOut:active {
+    background-color: red;
+    /* 点击后背景为红色 */
+    color: white;
+    /* 点击后字体变为白色 */
+}
+
+.hotline {
+    width: 100%;
+    text-align: center;
+    color: rgb(117, 114, 114);
+    font-size: 25rpx;
+    margin-top: -10rpx;
+}

@@ -1,0 +1,50 @@
+<view>
+
+    <head fromFather="修改我的信息">
+    </head>
+
+    <view class="goBackBox" bindtap="goOneClickLogin">
+        <image src="../../images/goback.png" mode="" />
+        <view class="backText">返回</view>
+    </view>
+
+    <van-cell-group>
+        <van-field label="用户名" bind:change="usernameChange" value="{{ user.username }}" placeholder="请输入用户名" border="{{ true }}" />
+        <van-field label="昵称" bind:change="nicknameChange" value="{{ user.nickname }}" placeholder="请输入昵称" border="{{ true }}" />
+        <van-field label="电话" bind:change="telChange" type="number" value="{{ user.tel }}" placeholder="请输入电话" border="{{ true }}" />
+    </van-cell-group>
+
+    <view style="width: 100%;height: 50rpx;"></view>
+
+    <van-cell value="{{ user.sex }}" is-link bind:tap="chooseSex">
+        <view slot="title">
+            <view class="van-cell-text">性别</view>
+        </view>
+    </van-cell>
+    <van-action-sheet show="{{ show }}" description="请选择性别" actions="{{ actions }}" bind:close="onClose" bind:select="onSelect" />
+
+    <van-cell value="选择位置" is-link bind:tap="chooseCity">
+        <view slot="title">
+            <view class="van-cell-text">{{ user.address }}</view>
+        </view>
+    </van-cell>
+    <!-- 城市选择 -->
+    <van-action-sheet show="{{ cityShow }}" title="选择城市" bind:close="cityClose">
+        <view>
+            <van-picker columns="{{ array }}" default-index="{{ 0 }}" bind:change="cityChoose" />
+        </view>
+    </van-action-sheet>
+
+    <view class="chooseAvatar">
+        <view class="chooseAvatarText">更改头像</view>
+        <view>
+            <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="onImageChange" title="上传图片" multiple="{{true}}" accept="media" capture="{{capture}}" deletable="{{ true }}" bind:delete="delete" />
+        </view>
+    </view>
+
+
+    <view class="updateBtu" bind:tap="updateUserInfo">
+        提交修改
+    </view>
+
+</view>

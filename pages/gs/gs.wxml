@@ -1,0 +1,27 @@
+<!--pages/gs/gs.wxml-->
+
+<view>
+
+    <head fromFather="{{ name }}">
+    </head>
+
+    <view class="goBackBox" bindtap="goIndex">
+        <image src="../../images/goback.png" mode="" />
+        <view class="backText">返回</view>
+    </view>
+
+    <!-- 标签页 -->
+    <view class="scenicListBox">
+        <view class="scenicList" wx:for="{{dataList}}" bindtap="goGsDetail" data-index="{{item.gourmetSpecialtiesId}}" data-name="{{item.name}}">
+            <view class="scenicListImageBox">
+                <image src="{{item.image}}" mode="" />
+            </view>
+            <view class="scenicListTextBox">
+                <view class="scenicListTextBoxTitle">{{item.name}}</view>
+                <view class="scenicListTextBoxContent">{{item.content}}</view>
+            </view>
+        </view>
+    </view>
+    <!-- 标签页end -->
+
+</view>

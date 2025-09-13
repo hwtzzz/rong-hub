@@ -1,0 +1,66 @@
+<!--pages/me/me.wxml-->
+<view>
+
+    <head fromFather="我的">
+    </head>
+
+    <view class="backBox" bind:tap="toUpdateInfo">
+        <!-- 用户信息部分 -->
+        <view class="info">
+            <view class="name">
+                <text>{{ user.nickname }}</text>
+            </view>
+            <!-- <text class="tel">{{ user.tel }}</text> -->
+            <text class="address">{{ user.address }}</text>
+        </view>
+        <!-- 头像部分 -->
+        <image class="avatar" src="{{ user.avatar }}" alt="用户头像"></image>
+    </view>
+
+    <view style="height: 50rpx;"></view>
+
+    <van-cell is-link title="修改我的资料" icon="manager-o" link-type="navigateTo" url="/pages/updateInfo/updateInfo">
+    </van-cell>
+    <van-cell is-link title="修改密码" icon="replay" link-type="navigateTo" url="/pages/resetPassword/resetPassword">
+    </van-cell>
+    <van-cell is-link title="攻略审核" icon="records-o" link-type="navigateTo" url="/pages/strategyAudit/strategyAudit">
+    </van-cell>
+
+    <view style="height: 50rpx;"></view>
+
+    <van-cell is-link title="意见反馈" icon="comment-circle-o" link-type="navigateTo" url="/pages/suggestion/suggestion">
+    </van-cell>
+    <van-cell is-link title="关于项目" icon="question-o" bind:tap="showAboutContent">
+    </van-cell>
+
+    <van-action-sheet show="{{ showAbout }}" title="关于项目" bind:close="aboutClose">
+        <view style="width: 95%;margin: 0 auto;">
+            <text user-select="{{true}}">
+                🌟 关于项目 | 旅游社交平台 🌟
+
+                📌 项目简介
+                这是一个专为旅游爱好者打造的社交平台，基于 SpringBoot + Vue + 微信小程序 开发
+
+                🛠 技术栈
+                - 后端：SpringBoot + MyBatisPlus + MySQL + Redis
+                - 前端：Vue.js + Router + Axios + Element UI + Echarts
+                - 移动端：微信小程序 + Vant-Ui + 高德开放API
+
+                💡 核心功能
+                ✅ 旅游攻略分享：用户可发布图文攻略，打卡成都热门景点 🏞
+                ✅ 社交互动：点赞、评论、参与趣味活动，结识志同道合的旅行伙伴 💬
+            </text>
+        </view>
+    </van-action-sheet>
+
+    <view class="loginOut" bindtap="handleLogout">
+        退出登录
+    </view>
+
+    <van-dialog id="van-dialog" />
+
+    <view class="hotline">
+        联系平台： <span style="color: #00c2a8;" is-link bindtap='callPhone'>{{ sysConfig.hotline }}</span>
+    </view>
+
+</view>

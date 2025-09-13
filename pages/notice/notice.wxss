@@ -1,0 +1,28 @@
+/* pages/notice/notice.wxss */
+.goBackBox {
+    width: 130rpx;
+    height: 55rpx;
+    position: relative;
+    top: -77rpx;
+    left: 10rpx;
+}
+
+.goBackBox image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.backText {
+    position: absolute;
+    left: 55rpx;
+    top: 5rpx;
+    color: white;
+    font-weight: 600;
+}
+
+.noticeBox {
+    width: 95%;
+    height: 690px;
+    margin: -20px auto;
+}

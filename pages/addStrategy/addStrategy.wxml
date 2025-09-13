@@ -1,0 +1,25 @@
+<head fromFather="攻略">
+</head>
+
+<view class="goBackBox" bindtap="goOneClickLogin">
+    <image src="../../images/goback.png" mode="" />
+    <view class="backText">返回</view>
+</view>
+
+<view class="page">
+    <!-- 攻略标题 -->
+    <van-field label="攻略标题" placeholder="请输入标题" value="{{ title }}" bindinput="onTitleInput" required />
+
+    <!-- 攻略内容 -->
+    <van-field label="攻略内容" placeholder="请输入攻略内容" value="{{ content }}" bindinput="onContentInput" required type="textarea" rows="5" />
+
+    <!-- 上传图片（限制只能上传一张） -->
+    <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="onImageChange" title="上传图片" multiple="{{true}}" accept="media" capture="{{capture}}" deletable="{{ true }}" bind:delete="delete" />
+
+    <!-- 景区选择 -->
+    <van-picker show="{{ showPicker }}" value="{{ scenicIndex }}" columns="{{ scenicOptions }}" bindchange="onPickerChange" bindconfirm="onPickerConfirm" bindcancel="onPickerCancel" />
+
+    <van-button type="primary" size="large" class="submit-btn" bindtap="onSubmit">
+        提交攻略
+    </van-button>
+</view>

@@ -1,0 +1,29 @@
+<head></head>
+<view class="box">
+    <!-- 顶部 -->
+    <view class="top">
+       <image src="/images/logo.png" mode=""/>
+    </view>
+    <!-- 顶部 end -->
+
+    <!-- 账号密码登录 -->
+    <view class="loginTitle">登录</view>
+    <!-- 账号密码登录 end -->
+
+    <!-- 输入框 -->
+    <view class="loginBox">
+        <input class="input" name="username" placeholder="请输入登录账号" placeholder-class="placeholderColor" bindinput='searchUserName' />
+        <input class="password" type="password" name="userName" placeholder="请输入密码" placeholder-class="placeholderColor" bindinput='searchPassWord' />
+    </view>
+    <!-- 输入框 end -->
+
+    <!-- 账号密码登录提示 -->
+    <view class="question" bindtap='goRegister'>没有账号？去注册>></view>
+    <!-- 账号密码登录提示 end -->
+
+    <!-- 点击登录 -->
+    <view class="loginBtn" bindtap='go'>登录</view>
+    <!-- 点击登录 -->
+</view>
+
+  

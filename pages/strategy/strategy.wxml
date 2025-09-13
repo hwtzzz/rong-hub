@@ -1,0 +1,34 @@
+<!--pages/strategy/strategy.wxml-->
+<view>
+
+    <head fromFather="攻略">
+    </head>
+
+    <van-button icon="plus" type="primary" style="position: absolute;top: 800rpx;right: 20rpx;z-index:1000" 
+    round color="#00c2a8" bindtap="addStrategy"/>
+
+    <!-- 顶部搜索框 -->
+    <van-search value="{{ searchValue }}" placeholder="请输入攻略关键词" use-action-slot bind:change="onSearchChange" bind:search="onSearch" maxlength="12">
+        <view slot="action" bind:tap="onClickSearch">搜索</view>
+    </van-search>
+    <!-- 顶部搜索框end -->
+
+    <scroll-view scroll-y="true" class="strategyListBox" style="height: 680px;">
+        <view class="strategyList">
+            <view class="strategyBox" wx:for="{{strategyList}}" bindtap="strategyDetail" data-index="{{item.strategyId}}">
+                <view class="strategyImageBox">
+                    <image src="{{item.image}}" alt="" />
+                    <view class="viewBox">
+                        <image src="../../images/view.png" mode="" />
+                        <view class="viewNumber">{{item.view}}</view>
+                    </view>
+                </view>
+                <view class="strategyTextBox">
+                    <view class="strategyTitle">{{item.title}}</view>
+                    <view class="strategyContent">{{item.content}}</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>

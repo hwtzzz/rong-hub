@@ -1,0 +1,125 @@
+.box {
+    width: 350px;
+    height: 488px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.top {
+    width: 303px;
+    height: 80px;
+    margin: 60px auto;
+}
+.top image{
+    width: 100%;
+    height: 100%;
+}
+
+.loginTitle {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.loginBox {
+    width: 100%;
+    height: 110px;
+    margin-top: 10px;
+}
+
+.loginBox input {
+    border-bottom: 1px solid rgb(224, 220, 220);
+    height: 45px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.placeholderColor {
+    color: rgb(179, 174, 174);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.question {
+    font-size: 13px;
+    color: rgb(57, 193, 235);
+    font-weight: 600;
+    text-align: center;
+}
+
+.loginBtn {
+    width: 90%;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: 600;
+    font-family: "宋体";
+    margin-top: 35px;
+    background: linear-gradient(-90deg, #00C9A7, #008F7A);
+}
+
+.buttomLoginBox {
+    width: 230px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+page {
+    background-color: rgb(241, 243, 245);
+}
+
+.goBackBox {
+    width: 130rpx;
+    height: 55rpx;
+    position: relative;
+    top: -77rpx;
+    left: 10rpx;
+}
+
+.goBackBox image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.backText {
+    position: absolute;
+    left: 55rpx;
+    top: 5rpx;
+    color: white;
+    font-weight: 600;
+}
+.updateBtu{
+    width: 95%;
+    height: 80rpx;
+    background: linear-gradient(to right, #00c2a8, #55f1cd);
+    margin: 30rpx auto;
+    border-radius: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    color: white;
+    font-size: 32rpx;
+    font-weight: 500;
+}
+.chooseAvatar{
+    width: 100%;
+    height: 200rpx;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.chooseAvatar .chooseAvatarText{
+    width: 200rpx;
+    height: 100%;
+    line-height: 200rpx;
+    font-size: 26rpx;
+    padding-left: 35rpx;
+    color: rgb(97, 97, 95);
+}

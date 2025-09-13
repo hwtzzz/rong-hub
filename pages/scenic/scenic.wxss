@@ -1,0 +1,69 @@
+/* pages/scenic/scenic.wxss */
+page {
+    background-color: aliceblue;
+}
+
+.scenicListBox {
+    width: 100%;
+    margin-top: 20rpx;
+}
+
+.scenicList {
+    width: 100%;
+    height: 180rpx;
+    background-color: white;
+    margin-top: 10rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scenicListImageBox {
+    width: 210rpx;
+    height: 150rpx;
+    border-radius: 15rpx;
+}
+
+.scenicListImageBox image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15rpx;
+}
+
+.scenicListTextBox {
+    width: 500rpx;
+    height: 150rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.scenicListTextBoxTitle {
+    font-size: 34rpx;
+    font-weight: 600;
+    height: 60rpx;
+    line-height: 60rpx;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scenicListTextBoxContent {
+    font-family:‘Times New Roman’, Times, serif;
+    height: 63rpx;
+    font-size: 25rpx;
+    width: 99%;
+    overflow: hidden;
+    /* 隐藏溢出 */
+    word-break: break-all;
+    /* break-all(允许在单词内换行。) */
+    text-overflow: ellipsis;
+    /* 超出部分省略号 */
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical;
+    /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2;
+    /** 显示的行数 **/
+}

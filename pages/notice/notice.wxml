@@ -1,0 +1,19 @@
+<!--pages/notice/notice.wxml-->
+<view>
+
+    <head fromFather="系统公告">
+    </head>
+
+    <view class="goBackBox" bindtap="goOneClickLogin">
+        <image src="../../images/goback.png" mode="" />
+        <view class="backText">返回</view>
+    </view>
+
+    <scroll-view scroll-y="true" class="noticeBox">
+        <text>
+            {{noticeData}}
+            发布时间：{{ noticeTime }}
+        </text>
+    </scroll-view>
+
+</view>

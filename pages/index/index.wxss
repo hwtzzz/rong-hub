@@ -1,0 +1,219 @@
+/**index.wxss**/
+page {
+    background-color: rgb(241, 243, 245);
+}
+
+.home-swiper {
+    width: 100%;
+    height: 350rpx;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+}
+
+.listBox {
+    position: absolute;
+    width: 100%;
+    height: 180rpx;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -20rpx;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.iconBox {
+    width: 140rpx;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconBoxImage {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100rpx;
+    background-color: #00c2a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconBoxImage image {
+    height: 50%;
+    width: 60%;
+}
+
+.iconBoxText {
+    width: 140rpx;
+    height: 30rpx;
+    text-align: center;
+    font-size: 30rpx;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+.playBox {
+    width: 100%;
+    height: 420rpx;
+    margin-top: 180rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.playBoxTitle {
+    width: 96%;
+    height: 80rpx;
+    font-size: 32rpx;
+    line-height: 80rpx;
+    font-weight: 600;
+}
+
+.playBoxCardBox {
+    width: 96%;
+    height: 340rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playBoxCardBoxLeft {
+    width: 340rpx;
+    height: 340rpx;
+    background-color: #00c2a8;
+    border-radius: 20rpx;
+}
+
+.playBoxCardBoxRight {
+    width: 340rpx;
+    height: 340rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playBoxNoticeText1 {
+    color: white;
+    font-size: 40rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+
+.playBoxNoticeText2 {
+    color: white;
+    font-size: 26rpx;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+
+.playBoxCardBoxRightBox {
+    height: 160rpx;
+    width: 100%;
+    border-radius: 20rpx;
+}
+
+.playBoxCardBoxRightBox1 {
+    font-size: 36rpx;
+    color: white;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+
+.playBoxCardBoxRightBox2 {
+    font-size: 26rpx;
+    color: white;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+}
+
+.hotListBox {
+    width: 100%;
+    height: 540rpx;
+    margin-top: 15rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.hotListBoxButtom {
+    width: 96%;
+    height: 480rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotListBoxButtomBox {
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rpx;
+}
+
+.hotListBoxButtomCard {
+    height: 100%;
+    width: 200rpx;
+    background-color: rgb(199, 199, 199);
+    position: relative;
+    border-radius: 20rpx;
+}
+
+.cardTop {
+    color: white;
+    font-size: 36rpx;
+    position: absolute;
+    top: 40rpx;
+    left: 55rpx;
+}
+
+.cardButtom {
+    color: white;
+    font-size: 30rpx;
+    position: absolute;
+    margin-top: 100rpx;
+    left: 40rpx;
+}
+
+.hotelList {
+    height: 100%;
+    width: 530rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list {
+    height: 30%;
+    width: 100%;
+    display: flex;
+}
+.listNumber{
+    width: 80rpx;
+    height: 100%;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    font-weight: 600;
+}
+.listText{
+    width: 440rpx;
+    height: 100%;
+    font-size: 30rpx;
+    line-height: 60rpx;
+}
+.color1{
+    color: orange;
+}
+.color2{
+    color: green;
+}
+.color3{
+    color: blue;
+}

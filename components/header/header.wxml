@@ -1,0 +1,5 @@
+<!--components/header/header.wxml-->
+<view class="head" style="padding-top: {{paddingTopNum}}px;">
+    <view class="title">{{fromFather}}</view>
+</view>
+

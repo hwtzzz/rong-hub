@@ -1,0 +1,121 @@
+.goBackBox {
+    width: 130rpx;
+    height: 55rpx;
+    position: relative;
+    top: -77rpx;
+    left: 10rpx;
+}
+
+.goBackBox image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.backText {
+    position: absolute;
+    left: 55rpx;
+    top: 5rpx;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* pages/detail/detail.wxss */
+.container {
+    background: #f7f5f2;
+    min-height: 100vh;
+    padding-bottom: 40rpx;
+    margin-top: -20px;
+}
+
+.main-image {
+    margin-top: -70px;
+    width: 90%;
+    border-radius: 0 0 30rpx 30rpx;
+    box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+
+.content-card {
+    background: #fff;
+    margin: 30rpx;
+    padding: 40rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 4rpx 12rpx rgba(233, 176, 137, 0.15);
+    position: relative;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30rpx;
+}
+
+.title {
+    font-size: 42rpx;
+    color: #333;
+    font-weight: 600;
+    margin-right: 20rpx;
+    max-width: 70%;
+}
+
+.tag {
+    padding: 8rpx 20rpx;
+    border-radius: 8rpx;
+    font-size: 24rpx;
+    font-weight: 500;
+}
+
+.tag.cuisine {
+    background: #fff0e6;
+    color: #ff7426;
+}
+
+.tag.specialty {
+    background: #e8f5e9;
+    color: #4caf50;
+}
+
+.publish-time {
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 26rpx;
+    margin-bottom: 40rpx;
+}
+
+.time-icon {
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 10rpx;
+}
+
+.divider {
+    height: 2rpx;
+    background: #eee;
+    margin: 40rpx 0;
+}
+
+.content-title {
+    display: block;
+    font-size: 34rpx;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 30rpx;
+}
+
+.content-text {
+    font-size: 30rpx;
+    color: #666;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.deco-line {
+    position: absolute;
+    right: -20rpx;
+    top: 20%;
+    width: 4rpx;
+    height: 60%;
+    background: linear-gradient(to bottom, #ffd8b8, #ffaa7f);
+}

@@ -1,0 +1,21 @@
+<head fromFather="意见反馈">
+</head>
+
+<view class="goBackBox" bindtap="goOneClickLogin">
+    <image src="../../images/goback.png" mode="" />
+    <view class="backText">返回</view>
+</view>
+<view style="margin-top: -18px;height: 250rpx;">
+    <van-field type="textarea" placeholder="请说明具体问题（200字以内）" autosize border="{{ false }}" maxlength="200" value="{{ content }}" bindinput="onContentInput" required />
+</view>
+
+<!-- 上传图片（限制只能上传一张） -->
+<view style="padding-left: 20rpx;">
+    <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="onImageChange" title="上传图片" multiple="{{true}}" accept="media" capture="{{capture}}" deletable="{{ true }}" bind:delete="delete" />
+</view>
+
+<van-field value="{{ address }}" bindinput="onAddressInput" required placeholder="请输入手机号、QQ或者邮箱" />
+
+<view bindtap="onSubmit" class="sub-btn">
+    提交反馈
+</view>

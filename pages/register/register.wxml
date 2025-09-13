@@ -1,0 +1,34 @@
+<head fromFather="注册">
+</head>
+
+<van-cell-group>
+        <van-field label="用户名" bind:change="usernameChange" value="{{ user.username }}" placeholder="请输入用户名" border="{{ true }}" />
+        <van-field label="昵称" bind:change="nicknameChange" value="{{ user.nickname }}" placeholder="请输入昵称" border="{{ true }}" />
+        <van-field label="电话" bind:change="telChange" type="number" value="{{ user.tel }}" placeholder="请输入电话" border="{{ true }}" />
+    </van-cell-group>
+
+    <view style="width: 100%;height: 50rpx;"></view>
+
+    <van-cell value="{{ user.sex }}" is-link bind:tap="chooseSex">
+        <view slot="title">
+            <view class="van-cell-text">性别</view>
+        </view>
+    </van-cell>
+    <van-action-sheet show="{{ show }}" description="请选择性别" actions="{{ actions }}" bind:close="onClose" bind:select="onSelect" />
+
+    <van-cell value="选择位置" is-link bind:tap="chooseCity">
+        <view slot="title">
+            <view class="van-cell-text">{{ user.address }}</view>
+        </view>
+    </van-cell>
+    <!-- 城市选择 -->
+    <van-action-sheet show="{{ cityShow }}" title="选择城市" bind:close="cityClose">
+        <view>
+            <van-picker columns="{{ array }}" default-index="{{ 0 }}" bind:change="cityChoose" />
+        </view>
+    </van-action-sheet>
+
+    <view class="updateBtu" bind:tap="register">
+        注册
+    </view>
+    <view class="question" bindtap='goLogin'>已有账号？去登录>></view>

@@ -1,0 +1,88 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/register/register",
+        "pages/index/index",
+        "pages/scenic/scenic",
+        "pages/scenicDetail/scenicDetail",
+        "pages/strategy/strategy",
+        "pages/strategyDetail/strategyDetail",
+        "pages/activity/activity",
+        "pages/me/me",
+        "pages/gs/gs",
+        "pages/notice/notice",
+        "pages/addStrategy/addStrategy",
+        "pages/updateInfo/updateInfo",
+        "pages/strategyAudit/strategyAudit",
+        "pages/suggestion/suggestion",
+        "pages/resetPassword/resetPassword",
+        "pages/gsDetail/gsDetail"
+    ],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "selectedColor": "#00c2a8",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "主页",
+                "iconPath": "./images/index.png",
+                "selectedIconPath": "./images/indexOne.png"
+            },
+            {
+                "pagePath": "pages/scenic/scenic",
+                "text": "景区",
+                "iconPath": "./images/jingdian1.png",
+                "selectedIconPath": "./images/jingdian2.png"
+            },
+            {
+                "pagePath": "pages/strategy/strategy",
+                "text": "攻略",
+                "iconPath": "./images/gonglue1.png",
+                "selectedIconPath": "./images/gonglue2.png"
+            },
+            {
+                "pagePath": "pages/activity/activity",
+                "text": "活动",
+                "iconPath": "./images/fuwu1.png",
+                "selectedIconPath": "./images/fuwu2.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "./images/mine.png",
+                "selectedIconPath": "./images/my.png"
+            }
+        ]
+    },
+    "renderer": "skyline",
+    "rendererOptions": {
+        "skyline": {
+            "defaultDisplayBlock": true,
+            "disableABTest": true,
+            "sdkVersionBegin": "3.0.0",
+            "sdkVersionEnd": "15.255.255"
+        }
+    },
+    "componentFramework": "glass-easel",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": {
+        "van-button": "./miniprogram_npm/@vant/weapp/button/index",
+        "van-search": "@vant/weapp/search/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "van-toast": "@vant/weapp/toast/index",
+        "van-field": "@vant/weapp/field/index",
+        "head": "/components/header/header",
+        "van-uploader": "@vant/weapp/uploader/index",
+        "van-picker": "@vant/weapp/picker/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-action-sheet": "@vant/weapp/action-sheet/index",
+        "van-tag": "@vant/weapp/tag/index",
+        "van-dialog": "@vant/weapp/dialog/index"
+    }
+}

@@ -1,0 +1,146 @@
+/* pages/strategyAudit/strategyAudit.wxss */
+page {
+    background-color: rgb(241, 243, 245);
+}
+
+.goBackBox {
+    width: 130rpx;
+    height: 55rpx;
+    position: relative;
+    top: -77rpx;
+    left: 10rpx;
+}
+
+.goBackBox image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.backText {
+    position: absolute;
+    left: 55rpx;
+    top: 5rpx;
+    color: white;
+    font-weight: 600;
+}
+
+/* 容器样式 */
+.container {
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* 空状态 */
+.empty {
+    text-align: center;
+    padding: 350rpx 0;
+}
+
+.empty-img {
+    width: 240rpx;
+    height: 240rpx;
+    opacity: 0.6;
+}
+
+.empty-text {
+    display: block;
+    color: #999;
+    font-size: 28rpx;
+    margin-top: 30rpx;
+}
+
+.strategyListBox {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.strategyBox {
+    width: 100%;
+    height: 180rpx;
+    margin-bottom: 10px;
+    border-top-left-radius: 20rpx;
+    border-bottom-left-radius: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.strategyBoxImage {
+    height: 100%;
+    width: 250rpx;
+    border-top-left-radius: 20rpx;
+    border-bottom-left-radius: 20rpx;
+}
+
+.strategyBoxImage image {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20rpx;
+    border-bottom-left-radius: 20rpx;
+}
+
+.strategyBoxInfo {
+    width: 350rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.strategyBoxInfo .title {
+    width: 100%;
+    height: 50rpx;
+    font-size: 35rpx;
+    font-weight: 600;
+    overflow: hidden;
+    /* 隐藏溢出 */
+    word-break: break-all;
+    /* break-all(允许在单词内换行。) */
+    text-overflow: ellipsis;
+    /* 超出部分省略号 */
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical;
+    /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 1;
+    /** 显示的行数 **/
+}
+
+.strategyBoxInfo .content {
+    width: 100%;
+    height: 85rpx;
+    font-size: 30rpx;
+    overflow: hidden;
+    /* 隐藏溢出 */
+    word-break: break-all;
+    /* break-all(允许在单词内换行。) */
+    text-overflow: ellipsis;
+    /* 超出部分省略号 */
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical;
+    /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2;
+    /** 显示的行数 **/
+}
+
+.strategyBoxInfo .publishTime {
+    width: 100%;
+    height: 30rpx;
+    font-size: 25rpx;
+}
+
+.options {
+    width: 120rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.optionsImage{
+    width: 45rpx;
+    height: 50rpx;
+}
+.optionsImage image{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,82 @@
+/* pages/strategy/strategy.wxss */
+.strategyListBox {
+    margin: 0 auto;
+}
+
+.strategyList {
+    width: 750rpx;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -15rpx;
+}
+
+.strategyBox {
+    width: 340rpx;
+    height: 580rpx;
+    margin-top: 20rpx;
+    box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+    border-radius: 15rpx;
+}
+
+.strategyImageBox {
+    width: 100%;
+    height: 420rpx;
+    position: relative;
+}
+
+.strategyImageBox image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-top-left-radius: 15rpx;
+    border-top-right-radius: 15rpx;
+}
+
+.viewBox {
+    width: 200rpx;
+    height: 50rpx;
+    position: absolute;
+    top: 85%;
+
+}
+
+.viewBox image {
+    height: 40rpx;
+    width: 50rpx;
+    left: 10rpx;
+    top: 2rpx;
+}
+
+.viewNumber {
+    position: absolute;
+    left: 70rpx;
+    color: white;
+}
+.strategyTitle{
+    font-size: 35rpx;
+    font-weight: 600;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding-left: 5rpx;
+}
+.strategyContent{
+    font-size: 35rpx;
+    height: 60rpx;
+    font-size: 25rpx;
+    color: #b0a8b9;
+    font-family:‘Times New Roman’, Times, serif;
+    overflow: hidden;
+    /* 隐藏溢出 */
+    word-break: break-all;
+    /* break-all(允许在单词内换行。) */
+    text-overflow: ellipsis;
+    /* 超出部分省略号 */
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical;
+    /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2;
+    /** 显示的行数 **/
+}

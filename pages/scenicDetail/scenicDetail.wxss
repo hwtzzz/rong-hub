@@ -1,0 +1,484 @@
+/* pages/scenicDetail/scenicDetail.wxss */
+.goBackBox {
+    width: 130rpx;
+    height: 55rpx;
+    position: relative;
+    top: -77rpx;
+    left: 10rpx;
+}
+
+.goBackBox image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.backText {
+    position: absolute;
+    left: 55rpx;
+    top: 5rpx;
+    color: white;
+    font-weight: 600;
+}
+
+.bannerBox {
+    margin-top: -55rpx;
+    height: 400rpx;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+}
+
+.scenicTopBox {
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 8rpx 8rpx rgba(0, 0, 0, .1);
+}
+
+.scenicName {
+    font-size: 38rpx;
+    font-weight: 600;
+    width: 98%;
+    margin-left: 2%;
+}
+
+.openTime {
+    font-size: 30rpx;
+    width: 98%;
+    margin-left: 2%;
+    line-height: 35rpx;
+}
+
+.openTime image,
+.address image {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.address {
+    font-size: 30rpx;
+    width: 98%;
+    margin-left: 2%;
+    height: 30rpx;
+}
+
+.descBox {
+    width: 100%;
+}
+
+.descTitle {
+    width: 98%;
+    margin-left: 2%;
+    height: 100rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #fcf7ff;
+}
+
+.descContent {
+    width: 96%;
+    margin: 0 auto;
+    font-size: 30rpx;
+    color: #4b4453;
+    margin-top: 20rpx;
+}
+
+.otherBox {
+    box-shadow: 0 8rpx 8rpx rgba(0, 0, 0, .1);
+    margin-top: 20rpx;
+}
+
+/* .weatherBaseBox{
+    width: 96%;
+    height: 200rpx;
+    margin: 0 auto;
+    border-radius: 15rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.weatherBaseBox {
+    border-radius: 20rpx;
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    height: 200rpx;
+    padding: 20rpx;
+    margin: 0 atuo;
+    background:linear-gradient(60deg,#96deda 0%, #50c9c3 100%);
+    /* 半透明背景，避免压抑感 */
+    border-radius: 12rpx;
+    /* 圆角，增加柔和感 */
+    box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+    /* 轻微阴影，增加立体感 */
+    justify-content: space-around;
+}
+
+.left,
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left {
+    padding-right: 15rpx;
+}
+
+.right {
+    padding-left: 15rpx;
+}
+
+.weatherBaseBox view {
+    font-size: 26rpx;
+    /* 统一字体大小 */
+    color: #444;
+    /* 字体颜色，深灰色，增强对比度 */
+    margin-bottom: 10rpx;
+    /* 每项之间有适当间距 */
+}
+
+.left view {
+    font-weight: bold;
+    /* 左侧的湿度和时间加粗突出 */
+    color: #007aff;
+    /* 蓝色字体，突出重点 */
+}
+
+.right view {
+    font-size: 28rpx;
+    /* 右侧字体稍大，突出温度、天气等关键信息 */
+}
+
+.right view:nth-child(2) {
+    color: #ff9800;
+    /* 温度使用橙色，传递热情感 */
+}
+
+.right view:nth-child(3) {
+    color: #32cd32;
+    /* 风向使用绿色，代表清新感 */
+}
+
+.right view:nth-child(4) {
+    color: #2196f3;
+    /* 风力使用蓝色，体现清爽 */
+}
+
+.weatherBaseBox2 {
+    width: 98%;
+    /* 宽度为98% */
+    height: 250rpx;
+    /* 高度为250rpx */
+    margin: 10rpx auto;
+    /* 上下边距和自动水平居中 */
+    background: #ffffff;
+    /* 白色背景 */
+    border-radius: 15rpx;
+    /* 圆角效果 */
+    box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+    /* 阴影效果，增加层次感 */
+    display: flex;
+    /* 使用flex布局 */
+    padding: 15rpx;
+    box-sizing: border-box;
+}
+
+.left,
+.right {
+    flex: 1;
+    /* 左右部分平分宽度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 垂直居中 */
+}
+
+.left {
+    padding-right: 15rpx;
+    /* 右侧和左侧有间距 */
+}
+
+.right {
+    padding-left: 15rpx;
+}
+
+.weatherBaseBox2 view {
+    font-size: 24rpx;
+    /* 默认字体大小 */
+    color: #444;
+    /* 默认字体颜色 */
+    margin-bottom: 10rpx;
+    /* 每项之间的间距 */
+}
+
+.date,
+.weekday {
+    font-weight: bold;
+    /* 日期和星期几加粗 */
+    color: #007aff;
+    /* 蓝色，突出 */
+}
+
+.temp {
+    font-size: 30rpx;
+    /* 温度较大 */
+    font-weight: bold;
+    color: #ff9800;
+    /* 温暖的橙色 */
+}
+
+.windPower {
+    font-size: 24rpx;
+    color: #32cd32;
+    /* 绿色表示风力 */
+}
+
+.windDirection {
+    font-size: 24rpx;
+    color: #2196f3;
+    /* 蓝色表示风向 */
+}
+
+.weatherBaseBox2 {
+    width: 98%;
+    /* 宽度为98% */
+    height: 250rpx;
+    /* 高度为250rpx */
+    margin: 15rpx auto;
+    /* 上下边距和自动水平居中 */
+    background: linear-gradient(135deg, #f7c4fc, #b5d3f1);
+    /* 背景渐变色，温暖与清新的搭配 */
+    border-radius: 20rpx;
+    /* 圆角效果 */
+    box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.2);
+    /* 增加阴影效果，增加层次感 */
+    display: flex;
+    /* 使用flex布局 */
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+
+.left,
+.right {
+    flex: 1;
+    /* 左右部分平分宽度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 垂直居中 */
+}
+
+.left {
+    padding-right: 20rpx;
+    /* 右侧和左侧有间距 */
+}
+
+.right {
+    padding-left: 20rpx;
+}
+
+.weatherBaseBox2 view {
+    font-size: 24rpx;
+    /* 默认字体大小 */
+    color: #444;
+    /* 默认字体颜色 */
+    margin-bottom: 12rpx;
+    /* 每项之间的间距 */
+}
+
+.date,
+.weekday {
+    font-weight: bold;
+    /* 日期和星期几加粗 */
+    color: #007aff;
+    /* 蓝色，突出 */
+}
+
+.temp {
+    font-size: 32rpx;
+    /* 温度较大 */
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    /* 温度背景渐变色 */
+    color: white;
+    /* 温度文字为白色 */
+    padding: 5rpx 15rpx;
+    border-radius: 10rpx;
+    box-shadow: 0 4rpx 8rpx rgba(255, 152, 0, 0.3);
+    /* 温暖色调的阴影 */
+}
+
+.windPower {
+    font-size: 24rpx;
+    color: #32cd32;
+    /* 风力绿色 */
+    font-weight: bold;
+}
+
+.windDirection {
+    font-size: 24rpx;
+    color: #2196f3;
+    /* 风向蓝色 */
+}
+
+.weatherBaseBox2 .date,
+.weatherBaseBox2 .weekday {
+    font-size: 26rpx;
+    /* 稍大的字体 */
+    line-height: 32rpx;
+    /* 适当的行高 */
+}
+
+.weatherBaseBox2 .temp {
+    font-size: 36rpx;
+    /* 更大的字体显示温度 */
+    font-weight: bold;
+    color: white;
+    /* 白色字体，更加显眼 */
+    padding: 8rpx 20rpx;
+    background: linear-gradient(45deg, #ff9800, #f44336);
+    /* 温度卡片渐变背景 */
+    border-radius: 12rpx;
+    /* 圆角效果 */
+    box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.15);
+    /* 温暖色调阴影 */
+}
+
+.weatherBaseBox2 .windPower,
+.weatherBaseBox2 .windDirection {
+    margin-top: 8rpx;
+    /* 风力和风向之间留白 */
+    color: #888;
+    /* 更柔和的文字颜色 */
+}
+
+.weatherBaseBox2 .windPower {
+    font-size: 22rpx;
+}
+
+.weatherBaseBox2 .windDirection {
+    font-size: 22rpx;
+}
+
+.weatherBaseBox2 {
+    width: 98%;
+    /* 宽度为98% */
+    height: 250rpx;
+    /* 高度为250rpx */
+    margin: 15rpx auto;
+    /* 上下边距和自动水平居中 */
+    background: linear-gradient(135deg, #00c2a8, #00a594);
+    /* 使用网页主色调渐变背景 */
+    border-radius: 20rpx;
+    /* 圆角效果 */
+    box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.2);
+    /* 阴影效果，增加层次感 */
+    display: flex;
+    /* 使用flex布局 */
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+
+.left,
+.right {
+    flex: 1;
+    /* 左右部分平分宽度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 垂直居中 */
+}
+
+.left {
+    padding-right: 20rpx;
+    /* 右侧和左侧有间距 */
+}
+
+.right {
+    padding-left: 20rpx;
+}
+
+.weatherBaseBox2 view {
+    font-size: 24rpx;
+    /* 默认字体大小 */
+    color: #ffffff;
+    /* 默认字体颜色 */
+    margin-bottom: 12rpx;
+    /* 每项之间的间距 */
+}
+
+.date,
+.weekday {
+    font-weight: bold;
+    /* 日期和星期几加粗 */
+    color: #fff;
+    /* 白色，突出 */
+}
+
+.temp {
+    font-size: 28rpx;
+    /* 温度稍微小一点 */
+    font-weight: bold;
+    color: white;
+    /* 字体颜色为白色 */
+    padding: 6rpx 16rpx;
+    /* 内边距减少，保持大小适中 */
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    /* 温度背景渐变色 */
+    border-radius: 10rpx;
+    /* 圆角效果 */
+    box-shadow: 0 4rpx 6rpx rgba(255, 152, 0, 0.3);
+    /* 温暖色调的阴影 */
+}
+
+.windPower {
+    font-size: 22rpx;
+    color: #f1f1f1;
+    /* 更柔和的文字颜色 */
+}
+
+.windDirection {
+    font-size: 22rpx;
+    color: black;
+    /* 更柔和的文字颜色 */
+}
+
+.weatherBaseBox2 .date,
+.weatherBaseBox2 .weekday {
+    font-size: 26rpx;
+    /* 日期和星期几稍微大一点 */
+    line-height: 32rpx;
+    /* 适当的行高 */
+}
+
+.weatherBaseBox2 .temp {
+    font-size: 28rpx;
+    /* 更适中的字体 */
+    font-weight: bold;
+    color: white;
+    /* 温度字体白色 */
+    padding: 6rpx 16rpx;
+    /* 内边距稍微调整 */
+    background: linear-gradient(45deg, #ff9800, #f44336);
+    /* 温度卡片渐变背景 */
+    border-radius: 12rpx;
+    /* 圆角效果 */
+    box-shadow: 0 4rpx 6rpx rgba(0, 0, 0, 0.15);
+    /* 温暖色调阴影 */
+}
+
+.weatherBaseBox2 .windPower,
+.weatherBaseBox2 .windDirection {
+    margin-top: 8rpx;
+    /* 风力和风向之间留白 */
+    color: black;
+    /* 更柔和的字体颜色 */
+}

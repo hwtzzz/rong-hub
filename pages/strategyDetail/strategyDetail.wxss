@@ -1,0 +1,148 @@
+/* pages/strategyDetail/strategyDetail.wxss */
+page {
+    background-color: rgb(241, 243, 245);
+}
+
+.goBackBox {
+    width: 130rpx;
+    height: 55rpx;
+    position: relative;
+    top: -77rpx;
+    left: 10rpx;
+}
+
+.goBackBox image {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.backText {
+    position: absolute;
+    left: 55rpx;
+    top: 5rpx;
+    color: white;
+    font-weight: 600;
+}
+
+.scrollBox {
+    margin-top: -20px;
+}
+
+.strategyBox {
+    width: 97%;
+    margin: 0 auto;
+    box-shadow: 0 8rpx 8rpx rgba(0, 0, 0, .1);
+    background-color: white;
+    border-radius: 15rpx;
+}
+
+.strategyBox .title {
+    height: 80rpx;
+    font-size: 50rpx;
+    font-weight: 600;
+    line-height: 80rpx;
+    padding-bottom: 15rpx;
+}
+
+.userInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70rpx;
+    font-size: 30rpx;
+    font-weight: 600;
+    padding-bottom: 20rpx;
+}
+
+.userInfo .avatar {
+    width: 70rpx;
+    height: 100%;
+    border-radius: 80rpx;
+    padding-right: 15rpx;
+}
+
+.userInfo .avatar image {
+    width: 100%;
+    height: 100%;
+    border-radius: 80rpx;
+}
+
+.publishTime {
+    font-size: 25rpx;
+    color: darkgray;
+}
+
+.content {
+    padding-top: 15rpx;
+    padding-bottom: 20rpx;
+}
+
+.name {
+    font-size: 25rpx;
+    color: rgb(76, 76, 238);
+    padding-bottom: 20rpx;
+}
+
+.bannerBox {
+    height: 400rpx;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 15rpx;
+}
+
+.image {
+    width: 100%;
+    height: 400rpx;
+    border-radius: 20rpx;
+}
+
+.image image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20rpx;
+}
+
+.strategyReviewListBox {
+    width: 97%;
+    /* height: 190rpx; */
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.userAvatar {
+    width: 100rpx;
+    height: 100%;
+    border-radius: 100rpx;
+}
+
+.userAvatar image {
+    width: 100%;
+    height: 100rpx;
+    border-radius: 100rpx;
+}
+.strategyBoxRight{
+    width: 600rpx;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nickname{
+    font-size: 28rpx;
+    color: darkgray;
+    height: 30rpx;
+}
+.userContent{
+    font-size: 28rpx;
+    /* height: 120rpx; */
+}
+.sendTime{
+    font-size: 26rpx;
+    color: darkgray;
+    height: 30rpx;
+}
