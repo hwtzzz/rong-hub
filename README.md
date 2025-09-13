@@ -4,6 +4,7 @@
 ### 一、项目介绍
 
 自主设计开发的基于SpringBoot+Vue+微信小程序的旅游社交小程序（带后台），可以无缝修改为本地级市的旅游平台，整合了各类技术，适合新手练习。
+项目后台地址：[项目后台](https://gitee.com/hwtzzz06/RongHubAdmin)
 
 ### 二、功能描述：
 
@@ -56,7 +57,7 @@ npm run serve
 ### 四、功能架构
 ![功能架构图](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%9C%80%E6%96%B0%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
-### 三、小程序截图
+### 五、小程序截图
 ![登录](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E7%99%BB%E5%BD%95.png)
 ![注册](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%B3%A8%E5%86%8C.png)
 ![首页](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E9%A6%96%E9%A1%B5.png)
@@ -72,11 +73,11 @@ npm run serve
 ![关于项目](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E5%85%B3%E4%BA%8E%E9%A1%B9%E7%9B%AE.png)
 
 
-### 五、后台部分截图
+### 六、后台部分截图
 
 ![后台首页](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E5%9B%BE%E7%89%871.png)
 
-### 六、问题咨询
+### 七、问题咨询
 
 获取完整项目请联系作者
 
