@@ -1,37 +1,34 @@
 # RongHub
 
-#### 介绍
-SpringBoot+Vue+微信小程序的旅游社交小程序（带后台）
+#### 项目介绍
+自主设计开发的基于SpringBoot+Vue+微信小程序的旅游社交小程序（带后台），可以无缝修改为本地级市的旅游平台，整合了各类技术，适合新手练习。
 
-#### 软件架构
-软件架构说明
+### 一、技术架构
 
+![输入图片说明](%E5%9B%BE%E7%89%871.png)
+后端：SpringBoot、Mysql、Redis、MybatisPlus
+前端：Vue、Router、Axios、ElementUI、Echarts、阿里云地图、微信小程序、VantUI、高德API服务
 
-#### 安装教程
+### 二、功能架构
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![输入图片说明](%E6%9C%80%E6%96%B0%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
-#### 使用说明
+### 三、小程序截图
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![登录](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E7%99%BB%E5%BD%95.png)
+![注册](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%B3%A8%E5%86%8C.png)
+![首页](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E9%A6%96%E9%A1%B5.png)
+![首页特产美食](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E7%89%B9%E4%BA%A7%E5%88%97%E8%A1%A8.png)
+![美食特产详情](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E7%BE%8E%E9%A3%9F%E8%AF%A6%E6%83%85.png)
+![景区列表](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%99%AF%E5%8C%BA%E5%88%97%E8%A1%A8.png)
+![景区详情](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%99%AF%E5%8C%BA%E8%AF%A6%E6%83%85.png)
+![攻略列表](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%94%BB%E7%95%A5%E5%88%97%E8%A1%A8.png)
+![攻略详情](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%94%BB%E7%95%A5%E8%AF%A6%E6%83%85.png)
+![活动列表](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%B4%BB%E5%8A%A8%E5%88%97%E8%A1%A8.png)
+![我的页面](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%88%91%E7%9A%84%E9%A1%B5%E9%9D%A2.png)
+![个人信息修改](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF%E4%BF%AE%E6%94%B9.png)
+![关于项目](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E5%85%B3%E4%BA%8E%E9%A1%B9%E7%9B%AE.png)
 
-#### 参与贡献
+### 四、后台部分截图
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![后台首页](%E5%90%8E%E5%8F%B0%E6%88%AA%E5%9B%BE%E5%90%8E%E5%8F%B0%E9%A6%96%E9%A1%B5.png)
