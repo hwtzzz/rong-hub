@@ -6,8 +6,31 @@
 ### 一、技术架构
 
 ![技术架构图](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
-后端：SpringBoot、Mysql、Redis、MybatisPlus
-前端：Vue、Router、Axios、ElementUI、Echarts、阿里云地图、微信小程序、VantUI、高德API服务
+
+ **后端：**
+-  SpringBoot 2.X
+-  Mysql 5.7
+-  Redis 3.X
+-  MybatisPlus 3.4.0
+
+ **前端：** 
+- Vue 2.6.X
+- Router 3.5.1
+- Axios 1.7.9
+- ElementUI 2.15.14
+- Echarts 5.6.0
+- 阿里云地图
+- 微信小程序
+- VantUI 1.11.7
+- 高德API服务
+
+前端后台导入vscode后使用以下命令启动项目：
+```
+npm i
+npm run serve
+```
+
+
 
 ### 二、功能架构
 ![功能架构图](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E6%9C%80%E6%96%B0%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
