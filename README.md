@@ -1,4 +1,5 @@
-# RongHub
+### RongHub
+
 
 #### 项目介绍
 自主设计开发的基于SpringBoot+Vue+微信小程序的旅游社交小程序（带后台），可以无缝修改为本地级市的旅游平台，整合了各类技术，适合新手练习。
@@ -54,3 +55,11 @@ npm run serve
 ### 四、后台部分截图
 
 ![后台首页](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE%E5%9B%BE%E7%89%871.png)
+
+### 五、问题咨询
+
+获取完整项目请联系作者
+QQ：2975612823
+![输入图片说明](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/QQ%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+WX：HwttzzZ
+![输入图片说明](%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE/%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
