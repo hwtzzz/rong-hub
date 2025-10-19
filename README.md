@@ -7,7 +7,7 @@
 
 ### 项目后台地址：
 
-[项目后台](https://gitee.com/hwtzzz06/RongHubAdmin)
+[项目后台](https://github.com/hwtzzz/RongHubAdmin)
 
 ### 二、功能描述：
 
